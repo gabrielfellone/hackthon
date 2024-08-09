@@ -77,10 +77,6 @@ RM: 350771
     "telefone": "+551198765-4321"
   }
   ```
-
-- **Validações que foram feitas:**
-  - Cliente não pode ter mais que 2 cartões
-  - Apenas 1 número de cartão por cliente 
   
 - **Resposta Esperada:**
   - **200 OK:** Cliente criado com sucesso.
@@ -108,11 +104,11 @@ RM: 350771
   }
   ```
 
-- **Validações que foram feitas:**
-  - Limite de cartão de credito
-  - Validade do cartão
-  - Valida cliente CPF
-  - Valida código
+ - **Validações que foram feitas:**
+  - Cliente não pode ter mais que 2 cartões
+  - Apenas 1 número de cartão por cliente 
+
+
 
 - **Resposta Esperada:**
   - **200 OK:** Sucesso e devolve chave cartão.
@@ -136,6 +132,13 @@ RM: 350771
     "cvv": "123"
   }
   ```
+
+- **Validações que foram feitas:**
+  - Limite de cartão de credito
+  - Validade do cartão
+  - Valida cliente CPF
+  - Valida código
+
 - **Resposta Esperada:**
   - **200 OK:** Pagamento registrado com sucesso.
   - **400 Bad Request:** Dados inválidos.
